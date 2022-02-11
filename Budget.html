@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="Budget.css" />
+    <title>Budget Web App</title>
+    <link rel="shortcut icon" type="image" href="icons8-money-bag-32.png">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="Logo.png" alt="BudgetLogo" />
+      </div>
+      <h1>Track Your Expense</h1>
+    </div>
+
+    <form class="form">
+        <div class="form-group">
+            <input
+              type="date"
+              name="date"
+              placeholder="Date"
+              class="form-control1"
+              value=""
+              required=""
+            />
+          </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            name="expenses"
+            placeholder="Enter Expense"
+            class="form-control2"
+            value=""
+            required=""
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="number"
+            name="amount"
+            placeholder="Enter Amount"
+            class="form-control3"
+            value=""
+            required=""
+          />
+        </div>
+
+        <button type="submit" class="btn">Add Expense</button>
+      </form>
+      <br />
+      <table class="data-table">
+        <thead>
+          <th>Date</th>
+          <th>Expenses</th>
+          <th>Amount</th>
+          <th width="200px"></th>
+        </thead>
+        <tbody></tbody>
+      </table>
+            <!-- <span id="val"></span> -->
+    </div>
+    <script src="Budget.js"></script>
+  </body>
+</html>
